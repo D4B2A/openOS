@@ -4,9 +4,16 @@
 
 static struct screenApplication[WINDOW_LIMIT] areaBuffer;
 
-void updateAreaBuffer(){ 
-  int* n;
-  for(int i = 0; i<lenght;i++){
-    
+struct frame renderFrame() {
+  for(int i = 0; i<windowCount; i++){
+      
   }
+}
+
+
+struct frameMap emptyFrameMap() {
+  bool [resolution.x][resolution.y];
+  
+  
+  return eFrameMap; 
 }
