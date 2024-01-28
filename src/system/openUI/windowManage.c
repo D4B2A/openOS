@@ -5,11 +5,11 @@
 static struct screenApplication[WINDOW_LIMIT] windowBuffer;
 
 struct frame renderFrame() {
-  struct frameMap = emptyFrameMap();
+  struct frame render = emptyFrame();
   for(int i = 0; i<windowCount; i++){
-      renderWindow(windowBuffer[i],*frameMap);
+      renderWindow(windowBuffer[i],*render);
   }
-  return frameMap.frame;
+  return render;
 }
 
 
